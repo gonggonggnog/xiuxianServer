@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/xiuxian">
+        <file>images/backgroundlogin.jpg</file>
+        <file>images/close.png</file>
+        <file>images/min.png</file>
+        <file>images/arrow-left-circle.svg</file>
+        <file>images/message-circle.svg</file>
+        <file>images/shopping-bag.svg</file>
+        <file>images/user.svg</file>
+    </qresource>
+</RCC>
