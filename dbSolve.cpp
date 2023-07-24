@@ -10,14 +10,14 @@ dbSolve::dbSolve()
 {
     db.removeDatabase("QMYSQL");
     db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("123.249.29.21");
+    db.setHostName("127.0.0.1");
     db.setUserName("root");
     db.setPassword("Zzz111...");
     db.setDatabaseName("xiuxian");
     db.open();
-    if (!db.isOpen())//´ò¿ªÊı¾İ¿â,Èç¹û·µ»Øfalse±íÊ¾´ò¿ªÊ§°Ü
+    if (!db.isOpen())//æ‰“å¼€æ•°æ®åº“,å¦‚æœè¿”å›falseè¡¨ç¤ºæ‰“å¼€å¤±è´¥
     {
-        //QMessageBox::critical(0, QString("CriticalÏûÏ¢¿ò"), QString("ÕâÊÇÒ»¸öCriticalÏûÏ¢¿ò£¡"));
+        //QMessageBox::critical(0, QString("Criticalæ¶ˆæ¯æ¡†"), QString("è¿™æ˜¯ä¸€ä¸ªCriticalæ¶ˆæ¯æ¡†ï¼"));
         qDebug()<<"database not opened";
         qDebug()<<db.lastError().text();
         return;
